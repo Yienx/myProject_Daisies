@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+/* Global styles */
+*, 
+*::before, 
+*::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+
+:root{
+  --Gradient: linear-gradient(0deg, rgba(72, 27, 41, .9) 10%, rgb(224, 1, 71, .8) 100%);
+
+}
+
+html{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+}
+
+ul{
+  list-style: none;
+}
+
+p{
+  font-size: 1.6rem;
+}
+
+body, html{
+  background-color: #eee ;
+  text-align: center;
+}
+
+/* HEADER */
+
+header{
+  width: 100%;
+  height: 3rem;
+  position: absolute; 
+  top: 0;
+  left: 0;
+  z-index: 1; 
+}
+
+.container{
+  width: 100%;
+  max-width: 98rem;
+  margin: 0 auto;
+  /* padding: 0 2.5rem; */
+}
+
+.topNav{
+  max-width: 100%;
+  background-color: #471b29;
+}
+
+nav{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 0.5rem 0; */
+  border-bottom: 1px solid  #e00147;
+}
+
+.nav-brand{
+  width: 15rem;
+  font-size: 2rem;
+  margin: 15px;
+}
+
+:first-of-type > ion-icon, .logo {
+  color: white;
+
+}
+
+.menu-icons i {
+  font-size: 4rem;
+  color: #fafafa;
+  cursor: pointer;
+}
+
+
+.nav-list{
+  width: 25rem;
+  height: 100%;
+  background-color: #e00147;
+  position: fixed;
+  top: 0;
+  right: -26rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* z-index: 1500; */
+  transition: all 650ms ease-in-out;
+
+}
+
+.nav-list.active{
+  right: 0;
+}
+.close{
+  position: absolute;
+  top: 1rem;
+  left: 1.5rem;
+}
+
+.nav-item{
+  margin: 1.5rem 0;
+}
+
+.nav-link {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  color: #eee;
+}
+.nav-link:hover{
+  color: gray;
+}
+
+/* end of header */
+
+
+/* ABOUT GRID */
+
+
+main{
+  height: 100vh;
+  overflow: scroll;
+}
+.textGrid {
+  background: #eee;
+  width: 100%;
+  height: 100%;
+  margin: 8% auto;
+  padding: 30px;
+  position: relative;
+  z-index: -1;
+ 
+}
+
+.aboutText{
+  /* float: left; */
+  font-size: 2rem;
+  text-align: center;
+  font-family: monospace;
+  line-height: 3rem;
+  padding: 20px;
+  margin: auto 10%;
+  
+}
+
+h1{
+  margin-bottom: 2rem;
+  color: #e00147;
+  text-transform: uppercase;
+}
+
+.aboutImg img{
+  width: 300px;
+  height: 300px;
+  max-width: 100%;
+  margin-top: 10px;
+}
+
+/* CONTACT US */
+
+.contactSection{
+  margin: 0 auto; 
+  
+}
+
+
+.contact-us{ 
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-gap: 2.5rem;
+  width: 100%;
+  height: 100%;
+  background-color: #471b29;
+}
+  
+
+.get-in-touch{
+  color: #fafafa;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-right: 1px solid #fafafa;
+}
+
+.get-in-touch >h3{
+  margin-top: 10px;
+  font-size: 3rem;
+  color: #e00147;
+}
+
+.social-links{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.social-links > li > a > i{
+  color: #fafafa;
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+.social-links > li > a{
+  background: #e00147;
+  border: 2px solid transparent;
+  padding: 1.5rem;
+  border-radius: 30%;
+}
+
+.social-links > li > a:hover{
+  background-color: #471b29;
+  transition: 650ms ease-in-out;
+}
+
+.newsletter{
+  padding-top: 5rem;
+  /* height: 90rem; */
+  color: rgba(0,0,0,.7);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+}
+
+legend{
+  font-size: 3rem;
+  color: #e00147;
+}
+
+.get-in-touch > p{
+  text-align: center;
+  font-size: 2rem;
+  margin: 3%;
+  padding: 20px 20px;
+}
+input[type = text], [type = email]{
+  padding: 10px 10px;
+  width: 70%;
+  margin: 5%;
+  font-size: 2rem;
+
+}
+
+
+.btn{
+  padding: 1rem 2.5rem;
+  border-radius: 2rem;
+  background-color: #e00147 ;
+  color: #fafafa;
+  display: inline-block;
+  margin-top: 2rem;
+  text-transform: uppercase;
+  transition: background-color 650ms;
+  margin-bottom: 10px;
+}
+
+.btn:hover{
+  background-color: #471b29;
+}
+
+/* FOOTER */
+
+
+footer{
+  margin-top: 20%;
+  position: relative;
+  bottom: 0;
+  padding: 2.5rem 0;
+  background: linear-gradient(0deg, rgba(72, 27, 41, .9) 10%, rgb(224, 1, 71, .8) 100%), url(/imagging/heroImg.webp) center no-repeat;
+  background-size: cover; 
+  text-align: center;
+  color: #fafafa;
+}
+
+
+
+/* Media queries */
+
+
+@media screen and (max-width: 290px){
+    .text-grid{
+      height: 100%;
+      text-align: center;
+      line-height: .5rem;
+    }
+}
+
+@media screen and (min-width: 700px) {
+  
+  .nav-brand{
+    width: 25rem;
+    font-size: 3rem;
+    margin-left: -5rem;
+  }
+
+  .nav-list{
+    width: initial;
+    height: initial;
+    background-color: transparent;
+    position: initial;
+    top: initial;
+    right: initial;
+    flex-direction: row;
+    transition: initial;
+  }
+  .menu-icons{
+    display: none;
+
+  }
+
+  .nav-item{
+    margin: 0 2.5rem;
+
+  }
+  .nav-link,
+  .current{
+    color: #fafafa;
+    position: relative;
+    font-size: 1.5rem;
+  }
+  .nav-link::before, .current::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1rem;
+    background-color: var(--Gradient);
+    width: 100%;
+    height: 1px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 650ms;
+  }
+  .current::before{
+    transform: scaleX(1);
+  }
+  .nav-link:hover::before{
+    transform: scaleX(1);
+  }
+}
+
+
+@media screen and (min-width: 300px){
+  .hero{
+    height: 70vh;
+  }
+  .svgrp{
+    margin: -5%;
+  }
+}
+@media screen and (max-width: 499px){
+  .hero{
+    height: 60vh;
+  }
+  .main-message{
+    width: 100%;
+    margin-top: 0%;
+    max-width: 30rem;
+  }
+}
+
+
+

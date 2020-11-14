@@ -1,0 +1,444 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+/* Global styles */
+*, 
+*::before, 
+*::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+
+}
+
+
+:root{
+  --Gradient: linear-gradient(0deg, rgba(72, 27, 41, .9) 10%, rgb(224, 1, 71, .8) 100%);
+
+}
+
+html{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+  box-sizing: border-box;
+  /* overflow: scroll; */
+}
+
+a{
+  text-decoration: none;
+}
+
+ul{
+  list-style: none;
+}
+
+p{
+  font-size: 1.6rem;
+}
+
+body{
+  background-color: #eee ;
+  text-align: center;
+}
+
+
+/* HEADER */
+
+header{
+  width: 100%;
+  height: 3rem;
+  position: absolute; 
+  top: 0;
+  left: 0;
+  z-index: 1; 
+}
+
+.container{
+  width: 100%;
+  max-width: 98rem;
+  margin: 0 auto;
+  /* padding: 0 2.5rem; */
+}
+
+.topNav{
+  max-width: 100%;
+  background-color: #471b29;
+}
+
+nav{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 0.5rem 0; */
+  border-bottom: 1px solid  #e00147;
+}
+
+.nav-brand{
+  width: 15rem;
+  font-size: 2rem;
+  margin: 15px;
+}
+
+:first-of-type > ion-icon, .logo {
+  color: white;
+
+}
+
+.menu-icons i {
+  font-size: 4rem;
+  color: #fafafa;
+  cursor: pointer;
+}
+
+
+.nav-list{
+  width: 25rem;
+  height: 100vh;
+  background-color: #e00147;
+  position: fixed;
+  top: 0;
+  right: -26rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1500;
+  transition: all 650ms ease-in-out;
+
+}
+
+.nav-list.active{
+  right: 0;
+}
+.close{
+  position: absolute;
+  top: 1rem;
+  left: 1.5rem;
+}
+
+.nav-item{
+  margin: 1.5rem 0;
+}
+
+.nav-link {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  color: #eee;
+}
+.nav-link:hover{
+  color: gray;
+}
+
+
+/* main----- */
+
+main{
+  height: 100vh;
+  overflow: scroll;
+}
+.hero {
+  width: 100%;
+  height: 55vh;
+  background: linear-gradient(0deg, rgba(72, 27, 41, .9) 10%, rgb(224, 1, 71, .8) 100%), 
+  url(/imagging/heroImg.webp) center no-repeat;
+  background-size: cover; 
+  position: relative;
+  overflow: hidden;
+}
+
+
+.main-message {
+  margin-top: 20px;
+  padding: 4rem;
+  line-height: 2.5;
+  text-align: left;
+  width: 100%;
+  max-width: 50rem;
+  color: #fafafa;
+  transform: translateY(20%);
+
+}
+
+
+.btn{
+  padding: 1rem 2.5rem;
+  border-radius: 2rem;
+  background-color: #e00147 ;
+  color: #fafafa;
+  display: inline-block;
+  margin-top: 2rem;
+  text-transform: uppercase;
+  transition: background-color 650ms ;
+}
+
+.btn:hover{
+  background-color: #471b29;
+}
+
+/* experience the beauty of nature */
+
+.experience-nature{
+  height: 100%vh;
+  margin-top: 2rem;
+  padding: 0;
+}
+
+.title-heading{
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 10rem;
+  color: rgba(0,0,0, .7) ;
+
+}
+
+.title-heading h3{
+  font-size: 2rem;
+}
+
+.title-heading h3{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  margin: .5rem 0 1rem ;
+}
+
+.title-heading p{
+  text-transform: lowercase;
+}
+.activities-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 2.5rem;
+}
+
+.activities-grid-item {
+  height: 40rem;
+  padding: 5rem;
+  color: #fafafa;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+  transition: all ease-in-out 650ms;
+}
+
+.activities-grid-item::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(72, 27, 41, .9) 10%, rgb(224, 1, 71, .8) 100%), url(/imagging/heroImg.webp) center no-repeat;
+  background-size: cover; 
+  z-index: -1;
+  
+}
+
+.activities-grid-item a{
+  color: #fafafa; 
+}
+
+
+.activities-grid-item:hover{
+  background: #e00147;
+  transform: scale(1.1);
+}
+
+
+.activities-grid-item ion-icon{
+  font-size: 2rem;
+}
+.activities-grid-item h1{
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  margin: 2rem 0;
+}
+
+/* testimonials */
+/* gallery */
+
+.testimonials {
+  margin: 5rem;
+}
+
+.testimonial > h1{
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 3rem;
+  color: rgba(0,0,0, .7);
+  margin-top: 15%;
+}
+
+.testimonial > h1::before{
+  content: "||";
+  width: 100%;
+  height: 100%;
+  color: #e00147;
+  position: relative;
+  display: inline;
+  margin: 20px;
+  left: 0;
+  top: 0;
+}
+
+.testimonial > h1::after {
+  content: "||";
+  width: 100%;
+  height: 100%;
+  color: #e00147;
+  position: relative;
+  display: inline;
+  margin: 20px;
+  right: 0;
+  top: 0;
+
+}
+
+.testimonial-text-box {
+  position: relative;
+  margin: 10% auto;
+  padding: 3rem;
+  background: linear-gradient(0deg, rgba(72, 27, 41, .9) 10%, rgb(224, 1, 71, .8) 100%), url(/imagging/heroImg.webp) center no-repeat;
+  background-size: cover; 
+  color: #fafafa;
+
+}
+
+.testimonial-customer img{
+  width: 300px;
+  height: 350px;
+  max-width: 100%;
+  border-radius: 50%;
+  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 91% 67%, 68% 86%, 30% 100%, 9% 66%, 0% 30%);
+
+}
+
+.testimonial div > .icon-arrow{
+  width: 25px; padding: 2rem; background: rgba(148, 12, 55, .9); color: white;
+  font-size: 2rem;
+  position: relative;
+  top: 50%;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.icon-arrow:hover{
+  color: #471b29;
+}
+
+/* begin nature--booking */
+
+
+.begin-nature{
+  margin: 0;
+  padding: 3rem;
+  background: linear-gradient(0deg, rgba(72, 27, 41, .9) 10%, #e00147 100%), url(/imagging/heroImg.webp) center no-repeat;
+  background-size: cover; 
+  position: relative;
+  overflow: hidden;
+
+}
+
+
+.heading {
+  color: #fafafa;
+  font-size: 30px;
+
+}
+
+.nature-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 2.5rem;
+  margin-bottom: 3rem;
+  padding: 2rem;
+}
+
+.nature-grid-item p{
+  color: #fafafa;
+}
+.btnn{
+  margin-bottom: 2rem;
+}
+
+footer{
+  margin-top: 2rem;
+  padding: 2.5rem 0;
+  background: linear-gradient(0deg, rgba(72, 27, 41, .9) 10%, rgb(224, 1, 71, .8) 100%), url(/imagging/heroImg.webp)center no-repeat;
+  background-size: cover; 
+  text-align: center;
+  color: #fafafa;
+}
+
+/* Media queries */
+
+
+
+@media screen and (min-width: 700px) {
+  
+  .nav-brand{
+    width: 25rem;
+    font-size: 3rem;
+    margin-left: -5rem;
+  }
+
+  .nav-list{
+    width: initial;
+    height: initial;
+    background-color: transparent;
+    position: initial;
+    top: initial;
+    right: initial;
+    flex-direction: row;
+    transition: initial;
+  }
+  .menu-icons{
+    display: none;
+
+  }
+
+  .nav-item{
+    margin: 0 2.5rem;
+
+  }
+  .nav-link,
+  .current{
+    color: #fafafa;
+    position: relative;
+    font-size: 1.5rem;
+  }
+  .nav-link::before, .current::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1rem;
+    background-color: var(--Gradient);
+    width: 100%;
+    height: 1px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 650ms;
+  }
+  .current::before{
+    transform: scaleX(1);
+  }
+  .nav-link:hover::before{
+    transform: scaleX(1);
+  }
+}
+
+@media screen and (min-width: 279px){
+  .hero{
+    height: 120vh;
+  }
+  
+}
+
+  @media screen and (min-width: 375px){
+    .hero{
+      height: 85vh;
+    }
+}
+
+
+
