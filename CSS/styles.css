@@ -332,7 +332,7 @@ main{
 .begin-nature{
   margin: 0;
   padding: 3rem;
-  background: linear-gradient(0deg, rgba(72, 27, 41, .9) 10%, #e00147 100%), url(/imagging/heroImg.webp) center no-repeat;
+  background: linear-gradient(0deg, rgba(72, 27, 41, .9) 10%, rgb(224, 1, 71, .8) 100%), url(/imagging/heroImg.webp)center no-repeat;
   background-size: cover; 
   position: relative;
   overflow: hidden;
@@ -440,5 +440,12 @@ footer{
     }
 }
 
+/* viewport is less than or equal to 700px */
 
-
+@media screen and (max-width: 700px){
+  .nature-grid{
+    text-align: center;
+    margin: auto;
+  
+}
+}
