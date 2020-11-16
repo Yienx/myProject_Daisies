@@ -215,8 +215,8 @@ h1{
 .social-links > li > a{
   background: #e00147;
   border: 2px solid transparent;
-  padding: 1.5rem;
-  border-radius: 30%;
+  padding: 2rem;
+  border-radius: 40%;
 }
 
 .social-links > li > a:hover{
@@ -353,9 +353,9 @@ footer{
 
 
 @media screen and (max-width: 499px){
-  .text-grid{
+  .aboutText{
     margin: 0 10px;
-    justify-content: left;
+    float: left;
     }
   .aboutImg{
     margin-top: 7rem;
