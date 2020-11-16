@@ -53,7 +53,6 @@ header{
   width: 100%;
   max-width: 98rem;
   margin: 0 auto;
-  /* padding: 0 2.5rem; */
 }
 
 .topNav{
@@ -99,7 +98,6 @@ nav{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* z-index: 1500; */
   transition: all 650ms ease-in-out;
 
 }
@@ -126,7 +124,7 @@ nav{
   color: gray;
 }
 
-/* end of header */
+/* END OF HEADER */
 
 
 /* ABOUT GRID */
@@ -148,7 +146,6 @@ main{
 }
 
 .aboutText{
-  /* float: left; */
   font-size: 2rem;
   text-align: center;
   font-family: monospace;
@@ -355,22 +352,19 @@ footer{
 }
 
 
-@media screen and (min-width: 300px){
-  .hero{
-    height: 70vh;
-  }
-  .svgrp{
-    margin: -5%;
-  }
-}
 @media screen and (max-width: 499px){
-  .hero{
-    height: 60vh;
-  }
+  .text-grid{
+    margin: 0 10px;
+    justify-content: left;
+    }
   .main-message{
     width: 100%;
     margin-top: 0%;
     max-width: 30rem;
+  }
+  .aboutImg{
+    margin-top: 7rem;
+    /* max-width: 100%; */
   }
 }
 
