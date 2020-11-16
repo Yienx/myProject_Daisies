@@ -357,14 +357,8 @@ footer{
     margin: 0 10px;
     justify-content: left;
     }
-  .main-message{
-    width: 100%;
-    margin-top: 0%;
-    max-width: 30rem;
-  }
   .aboutImg{
     margin-top: 7rem;
-    /* max-width: 100%; */
   }
 }
 
