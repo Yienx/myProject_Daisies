@@ -1,2 +1,2 @@
 # myProject_Daisies
-Just another Project
+First Project on Github!
